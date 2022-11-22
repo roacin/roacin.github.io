@@ -9,6 +9,8 @@
 <script>
 
 var cotacao, referencia, valordapeca;
+var valor1, valor2, valor3, valor4;
+var x, y, z;
 
 cotacao= prompt ("INFORME O VALOR DA COTAÇÃO: ") ;
 cotacao= eval (cotacao) ;
@@ -16,10 +18,26 @@ cotacao= eval (cotacao) ;
 referencia= prompt ("INFORME A REFERENCIA: ") ;
 referencia= eval (referencia) ; 
 
-valordapeca= referencia+cotacao;
+
+valor1=referencia*cotacao;
+x=((15*valor1)/100);
+valor2=valor1-x;
+y=((30*valor2)/100);
+valor3=valor2+y;
+valor4=valor3+20;
+
+if(valor4<=446){
+z=((12*valor4)/100);
+valordapeca= valor4+z;
+}else if (valor4>446 && valor4 < 950){
+valordapeca= valor4+50;
+}
 
 
-document.getElementById("demo").innerHTML = "VALOR DA PEÇA :"+" " + valordapeca;
+
+
+
+document.getElementById("demo").innerHTML = "VALOR DA PEÇA Á VISTA :"+" " + valordapeca;
 
 
 </script>

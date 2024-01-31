@@ -3,101 +3,11 @@
 <body>
 
 
-<p id="cota"></p>
-<p id="ref"></p>
-<p id="demo"></p>
-<p id="pg"></p>
-<p id="gn"></p>
+<a href='junio.html'><button>JUNIOR</button></a>
+<a href='cleide.html'><button>CLEIDE</button></a>
+<a href='azui.html'><button>AZUI</button></a>
+<a href='romanel.html'><button>ROMMANEL</button></a>
 
-<script>
-
-var cotacao, referencia, valordapeca, valordapecaparcelado, valorparcela;
-var valor1, valor2, valor3, valor4;
-var x, y, z, h;
-
-cotacao= prompt ("INFORME O VALOR DA COTAÇÃO: ") ;
-cotacao= eval (cotacao) ;
-
-referencia= prompt ("INFORME A REFERENCIA: ") ;
-referencia= eval (referencia) ; 
-
-
-valor1=referencia*cotacao;
-x=((15*valor1)/100);
-valor2=valor1-x;
-y=((30*valor2)/100);
-valor3=valor2+y;
-valor4=valor3+20;
-
-if(valor4<=446){
-z=((12*valor4)/100);
-valordapeca= valor4+z;
-}else if (valor4>446 && valor4 < 950){
-valordapeca= valor4+50;
-}else if (valor4>=950 && valor4 < 1400){
-valordapeca= valor4+100;
-}else if (valor4>=1400 && valor4 <1850 ){
-valordapeca= valor4+150;
-}else if (valor4>=1850 && valor4 <2300 ){
-valordapeca= valor4+200;
-}else if (valor4>=2300 && valor4 <2750 ){
-valordapeca= valor4+250;
-}else if (valor4>=2750 && valor4 <3200 ){
-valordapeca= valor4+300;
-}else if (valor4>=3200 && valor4 <3650 ){
-valordapeca= valor4+350;
-}else if (valor4>=3650 && valor4 <4100 ){
-valordapeca= valor4+400;
-}else if (valor4>=4100 && valor4 <4550 ){
-valordapeca= valor4+450;
-}else if (valor4>=4550 && valor4 <5000 ){
-valordapeca= valor4+500;
-}else if (valor4>=5000 && valor4 <6000 ){
-valordapeca= valor4+550;
-}else if (valor4>=6000 && valor4 <7000 ){
-valordapeca= valor4+650;
-}else if (valor4>=7000 && valor4 <8000 ){
-valordapeca= valor4+750;
-}else if (valor4>=8000 && valor4 <9000 ){
-valordapeca= valor4+850;
-}else if (valor4>=9000 && valor4 <10000 ){
-valordapeca= valor4+950;
-}else if (valor4>=10000 && valor4 <11000 ){
-valordapeca= valor4+1050;
-}else if (valor4>=11000 && valor4 <12000 ){
-valordapeca= valor4+1150;
-}else if (valor4>=12000 && valor4 <13000 ){
-valordapeca= valor4+1250;
-}else if (valor4>=13000 && valor4 <14000 ){
-valordapeca= valor4+1350;
-}else if (valor4>=14000 && valor4 <15000 ){
-valordapeca= valor4+1450;
-}else if (valor4>=15000 && valor4 <16000 ){
-valordapeca= valor4+1550;
-}else if (valor4>=16000 && valor4 <17000 ){
-valordapeca= valor4+1650;
-}else if (valor4>=17000 && valor4 <18000 ){
-valordapeca= valor4+1750;
-}else if (valor4>=18000 && valor4 <19000 ){
-valordapeca= valor4+1850;
-}else if (valor4>=19000 && valor4 <20000 ){
-valordapeca= valor4+1950;
-}else if (valor4>=20000 && valor4 <21000 ){
-valordapeca= valor4+1850;
-}
-
-
-h=((valordapeca*15)/100);
-valordapecaparcelado= valordapeca+h;
-valorparcela=valordapecaparcelado/10;
-
-document.getElementById("cota").innerHTML = "VALOR DA COTAÇÃO:"+" " +cotacao;
-document.getElementById("ref").innerHTML = "VALOR DA REFERÊNCIA:"+" " +referencia;
-document.getElementById("demo").innerHTML = " VALOR DA PEÇA Á VISTA :"+" " + valordapeca + " OU 10X "+" " + valorparcela ;
-document.getElementById("pg").innerHTML = " PAGAMOS :"+" " + valor2 ;
-document.getElementById("gn").innerHTML = " GANHAMOS :"+" " + y ;
-
-</script>
 
 </body>
 </html>

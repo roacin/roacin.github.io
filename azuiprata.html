@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<p id="cota"></p>
+<p id="ref"></p>
+<p id="demo"></p>
+<p id="pg"></p>
+<p id="gn"></p>
+<p id="cartaodebito"></p>
+<p id="cartaovencimento"></p>
+<p id="duas"></p>
+<p id="tres"></p>
+<p id="quatro"></p>
+<p id="cinco"></p>
+<p id="seis"></p>
+<p id="sete"></p>
+<p id="oito"></p>
+<p id="nove"></p>
+<p id="dez"></p>
+<p id="onze"></p>
+<p id="doze"></p>
+
+
+Referencia <input id="referencia" type="number"> <br />
+Sacola <input id="sacola" type="number"> <br />
+Cotacao <input id="cotacao" type="number"> <br />
+<button onclick="calcular()">Calcular</button>
+
+<a href='file:///C:/Users/bianormedeiros/Downloads/azui.html'><button>Voltar</button></a>
+
+
+<script>
+function calcular(){
+		
+		var valor1,valor2,valor3, valor_de_compra, ganho_de_30_porcento,  representante,venderpor;
+		var debito,vencimento,duas,tres,quatro,cinco,seis,sete,oito,nove,dez,onze,doze;
+		var debitoo,vencimentoo,duass,tress,quatroo,cincoo,seiss,setee,oitoo,novee,dezz,onzee,dozee;
+
+
+		
+
+		
+		var referencia = parseFloat(document.getElementById("referencia").value);
+		var sacola = parseFloat(document.getElementById("sacola").value);
+		var cotacao = parseFloat(document.getElementById("cotacao").value);
+
+
+		valor1=referencia*cotacao;
+		valor2=valor1*0.575;
+		valor_de_compra=valor1-valor2;
+		ganho_de_30_porcento=valor_de_compra*0.3;
+		valor3=valor_de_compra+ganho_de_30_porcento+sacola;
+		representante=valor3*0.12;
+		venderpor=representante+valor3;
+
+		
+		debitoo=venderpor*0.0261;
+		debito=venderpor+debitoo;
+
+		vencimentoo=venderpor*0.0454;
+		vencimento=venderpor+vencimentoo;
+
+		duass=venderpor*0.0739;
+		duas=venderpor+duass;
+
+		tress=venderpor*0.0820;
+		tres=venderpor+tress;
+
+		quatroo=venderpor*0.0915;
+		quatro=venderpor+quatroo;
+
+		cincoo=venderpor*0.0999;
+		cinco=venderpor+cincoo;
+
+		seiss=venderpor*0.1096;
+		seis=venderpor+seiss;
+
+		setee=venderpor*0.1158;
+		sete=venderpor+setee;
+
+		oitoo=venderpor*0.1284;
+		oito=venderpor+oitoo;
+
+		novee=venderpor*0.1413;
+		nove=venderpor+novee;
+
+		dezz=venderpor*0.1478;
+		dez=venderpor+dezz;
+
+		onzee=venderpor*0.1593;
+		onze=venderpor+onzee;
+
+		dozee=venderpor*0.1598;
+		doze=venderpor+dozee;
+
+		
+		
+		document.getElementById("ref").innerHTML = "VALOR DA REFERÊNCIA:"+" " +referencia;
+		document.getElementById("demo").innerHTML = " VALOR DA PEÇA Á VISTA :"+" " + venderpor ;
+		document.getElementById("pg").innerHTML = " PAGAMOS :"+" " + valor_de_compra ;
+		document.getElementById("gn").innerHTML = " GANHAMOS :"+" " + ganho_de_30_porcento ;
+
+		document.getElementById("cartaodebito").innerHTML =  " debito "+" " + debito ;
+		document.getElementById("cartaovencimento").innerHTML =  " vencimento "+" " + vencimento ;
+		document.getElementById("duas").innerHTML =  " duas "+" " + duas ;
+		document.getElementById("tres").innerHTML =  " tres "+" " + tres ;
+		document.getElementById("quatro").innerHTML =  " quatro "+" " + quatro ;
+		document.getElementById("cinco").innerHTML =  " cinco "+" " + cinco ;
+		document.getElementById("seis").innerHTML =  " seis "+" " + seis ;
+		document.getElementById("sete").innerHTML =  " sete "+" " + sete ;
+		document.getElementById("oito").innerHTML =  " oito "+" " + oito ;
+		document.getElementById("nove").innerHTML =  " nove "+" " + nove ;
+		document.getElementById("dez").innerHTML =  " dez "+" " + dez ;
+		document.getElementById("onze").innerHTML =  " onze "+" " + onze ;
+		document.getElementById("doze").innerHTML =  " doze "+" " + doze ;
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+
+<p id="demo"></p>
+<p id="pg"></p>
+<p id="gn"></p>
+<p id="cartaodebito"></p>
+<p id="cartaovencimento"></p>
+<p id="duas"></p>
+<p id="tres"></p>
+<p id="quatro"></p>
+<p id="cinco"></p>
+<p id="seis"></p>
+<p id="sete"></p>
+<p id="oito"></p>
+<p id="nove"></p>
+<p id="dez"></p>
+<p id="onze"></p>
+<p id="doze"></p>
+
+
+Valor <input id="valordapeca" type="number"> <br />
+<button onclick="calcular()">Calcular</button>
+
+<a href='file:///C:/Users/bianormedeiros/Downloads/index.html'><button>Voltar</button></a>
+
+
+<script>
+function calcular(){
+		
+		
+		var valordapeca = parseFloat(document.getElementById("valordapeca").value);
+		var valor1,valordecompra,representante,ganho;
+		var debito,vencimento,duas,tres,quatro,cinco,seis,sete,oito,nove,dez,onze,doze;
+		var debitoo,vencimentoo,duass,tress,quatroo,cincoo,seiss,setee,oitoo,novee,dezz,onzee,dozee;
+
+
+		valor1=valordapeca*0.46;
+		valordecompra=valordapeca-valor1;
+		representante=valordapeca*0.10;
+		ganho=((valordapeca-representante)-10)-valordecompra;
+
+		debitoo=valordapeca*0.0261;
+		debito=valordapeca+debitoo;
+
+		vencimentoo=valordapeca*0.0454;
+		vencimento=valordapeca+vencimentoo;
+
+		duass=valordapeca*0.0739;
+		duas=valordapeca+duass;
+
+		tress=valordapeca*0.0820;
+		tres=valordapeca+tress;
+
+		quatroo=valordapeca*0.0915;
+		quatro=valordapeca+quatroo;
+
+		cincoo=valordapeca*0.0999;
+		cinco=valordapeca+cincoo;
+
+		seiss=valordapeca*0.1096;
+		seis=valordapeca+seiss;
+
+		setee=valordapeca*0.1158;
+		sete=valordapeca+setee;
+
+		oitoo=valordapeca*0.1284;
+		oito=valordapeca+oitoo;
+
+		novee=valordapeca*0.1413;
+		nove=valordapeca+novee;
+
+		dezz=valordapeca*0.1478;
+		dez=valordapeca+dezz;
+
+		onzee=valordapeca*0.1593;
+		onze=valordapeca+onzee;
+
+		dozee=valordapeca*0.1598;
+		doze=valordapeca+dozee;
+
+
+
+
+		document.getElementById("demo").innerHTML = " VALOR DA PEÇA Á VISTA :"+" " + valordapeca;
+
+		document.getElementById("cartaodebito").innerHTML =  " debito "+" " + debito ;
+		document.getElementById("cartaovencimento").innerHTML =  " vencimento "+" " + vencimento ;
+		document.getElementById("duas").innerHTML =  " duas "+" " + duas ;
+		document.getElementById("tres").innerHTML =  " tres "+" " + tres ;
+		document.getElementById("quatro").innerHTML =  " quatro "+" " + quatro ;
+		document.getElementById("cinco").innerHTML =  " cinco "+" " + cinco ;
+		document.getElementById("seis").innerHTML =  " seis "+" " + seis ;
+		document.getElementById("sete").innerHTML =  " sete "+" " + sete ;
+		document.getElementById("oito").innerHTML =  " oito "+" " + oito ;
+		document.getElementById("nove").innerHTML =  " nove "+" " + nove ;
+		document.getElementById("dez").innerHTML =  " dez "+" " + dez ;
+		document.getElementById("onze").innerHTML =  " onze "+" " + onze ;
+		document.getElementById("doze").innerHTML =  " doze "+" " + doze ;
+
+
+		document.getElementById("pg").innerHTML = " PAGAMOS :"+" " + valordecompra ;
+		document.getElementById("gn").innerHTML = " TIRANDO O DO REPRESENTANTE E OS 1O REAIS DA SACOLA, GANHAMOS :"+" " + ganho;
+}
+</script>
+
+</body>
+</html>
